@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8eff8e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7fe57f; 
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-align: center;
+  background: #1abc9c;
+  color: white;;
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 37%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.info{
+  flex: 100%;
+  background-color: #e0d8d8;
+  padding: 20px;
+}
+
+.info2{
+  flex: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 63%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ <p> <font size="12">The New Age Of Ayurveda India</font></p>
+</div>
+
+<div class="navbar">
+  <a href="Home Page.html" class="active">Home</a>
+  <a href="Remedies.html">Remedies</a>
+  <a href="Comparison.html">Comparison</a>
+  <a href="Diagnosis.html">Diagnosis</a>
+</div>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="" style="width:100%">
+  <img class="mySlides" src="" style="width:100%">
+  <img class="mySlides" src="" style="width:100%">
+</section>
+
+  <div class="row">
+  <div class="main">
+    <p><font size="12"><b>What is Ayurveda?</b></font></p>
+    <br>
+<p><font size="6">Ayurveda is said to be an eternal science that first existed in the universal consciousness (Brahma) before it was passed from the creator to the ancient Indian mystics through meditation.</font></p>
+  </div>
+  
+  <div class="side">
+    <img src="Images/Ayurveda.png" height="290" width="424">
+  </div>
+  </div>
+  <br>
+  <div class="info">
+    <p><font size="12"><b>Origin of Ayurveda</b></font></p>
+    <br>
+  <p>
+    <font size="5">
+    The origins of Ayurveda stretch deep into antiquity. From 3300–1300 BCE; a Bronze Age civilization flourished in the Indus Valley in today’s Pakistan. Many of the foods and spices we associate with Ayurvedic cuisine, including rice, mung beans, urad dal, ginger, and turmeric, were already being cultivated in this ancient period. Later, the center of civilization shifted to the Ganges basin, where a people who called themselves the Arya or noble ones practiced a positive and life-affirming spirituality encapsulated in the Vedas. Composed between 500 and 1000 BCE in an ancient form of Sanskrit, the Vedas celebrate the elements of life, especially fire, wind, and water, as well as Mother Earth and the plants and animals who dwell upon her.  Many herbs, some now unknown and some still used in Ayurveda to this day, were originally described in the Vedas.
+   </font>
+   </p>
+   <br>
+   <p>
+   <font size="5">
+    As the Vedic or Gangetic civilization entered into the Iron Age at around 600 BCE, a spirit of reason and awakening dawned across the known world, with Plato and Aristotle giving their teachings in Greece, the Hebrew prophets in the Middle East and the Buddha in Northern India. Indian methods of healing shook off age-old trappings of superstition and acquired a clarity, depth of reasoning, and profound philosophical basis that have characterized Ayurveda ever since. From this awakening of empiricism and reason, the texts of Ayurveda, specifically Charak Samhita and Sushrut Samhita, arose. After centuries of clarification and refinement, these texts assumed their current form during India’s Golden Age, under the Gupta Empire, 320 to 550 CE.
+   </font>
+  </p>
+  </div>
+
+  <div class="info2">
+    <p><font size="12"><b>Countinuation of Ayurveda</b></font></p>
+    <br>
+    <p>
+      <font size="5">
+        India, the fabled land of spices, gems, peacocks and rich textiles, has always been a tempting prospect to traders and invaders alike. The inherent tolerance that characterizes India has enabled her to absorb influences from the outside world while retaining her own culture. Thus despite invasions by Genghis Khan and the Mongols in the thirteenth century, and the conquest of much of India by the Mughals in the sixteenth century, Ayurveda continued as the medicine of choice for the majority of people, and even enjoyed equal patronage to Unani or Arabic medicine during the reign of Emperor Akbar.
+      </font>
+    </p>
+    <br>
+    <p>
+      <font size="5">
+        Appearing first as traders in the form of the East India Company and then later as direct rule by the British Crown from 1858 to 1947, the British sought to impose their version of civilization upon India. From the founding of the Indian Medical Service in 1763, the Western medicine of the day was seen as normative. There were certain positive developments at this time. British botanists worked to compile the knowledge of Indian medicinal plants, both through scholarly books and through the establishment of botanical gardens—unwittingly continuing an effort that had begun in Vedic times. But the long arm of the empire was ill-suited to separate the quacks from authentic practitioners, especially of an ancient wisdom that was so different from their own. As a result, many of the great Ayurvedic texts, teachers, and techniques were silenced. Ayurveda survived on the outskirts of society, in rural areas where the traditional ways of living were maintained. As India regained independence, Ayurveda, along with Unani and Siddha medicinal systems were revived and acknowledged by the newly formed government.
+      </font>
+    </p>
+  </div>
+
+  <div class="info">
+    <p><font size="12"><b>Spread and Advancement of Ayurveda in the 1900s</b></font></p>
+    <br>
+    <p>
+      <font size="5">
+        In the mid- to late-20th century, seekers from the West began to travel to India. The teachings of Yoga and Ayurveda were rediscovered by a generation disenchanted with the reductionism and materialism that had come to characterize Western thought, initiating an explosion of interest that continues to this very day. By the early 1980s, Dr. Vasant Lad, Dr. Robert Svoboda, and David Frawley were spreading the teachings of Ayurveda throughout the United States. The publication of "Perfect Health: The Complete Mind/Body Guide", by Deepak Chopra, served to popularize Ayurveda among the general public. Spurred on the by the work of these pioneers, now NAMA’s (<a href="https://www.ayurvedanama.org/" target="_blank" rel="noopener noreferrer">National Ayurvedic Medical Association</a>) Advisory Board members, schools, and clinics began springing up across the country, giving rise to the need for solidarity and professionalization that gave birth to NAMA. Rooted in remote antiquity, and having survived and grown through the vicissitudes of time, Ayurveda now faces a bright future in India, the United States and across the world.
+      </font>
+    </p>
+  </div>
+
+
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+      </script>
+
+<div class="footer">
+  <p><font size="2">Disclaimer: Few contents on this page have been taken from <a href="https://www.ayurvedanama.org/" target="_blank" rel="noopener noreferrer">National Ayurvedic Medical Association</a></font></p>
+  <p><font size="2">For any queries/questions, please e-mail to hrithikamehra@gmail.com</font></p>
+  <p><font size="2">This website has been made by Hrithik Mehra</font></p>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.4.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.4.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
+
