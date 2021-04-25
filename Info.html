@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Info</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8eff8e; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7fe57f; 
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  text-align: center;
+  background: #1abc9c;
+  color: white;;
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 50%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.side1 {
+  flex: 50%; /* Set the width of the sidebar */
+  background-color: white; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+
+.info{
+  flex: 100%;
+  background-color: #e0d8d8;
+  padding: 20px;
+}
+
+.info2{
+  flex: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 50%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.main1 {
+  flex: 50%; /* Set the width of the main content */
+  background-color: #f1f1f1; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ <p> <font size="12">The New Age Of Ayurveda India</font></p>
+</div>
+
+<div class="navbar">
+  <a href="Home Page.html">Home</a>
+  <a href="Remedies.html">Remedies</a>
+  <a href="Comparison.html">Comparison</a>
+  <a href="Diagnosis.html">Diagnosis</a>
+  <a href="Info.html" class="active">Info</a>
+</div>
+
+<div class="row">
+<div class="main">
+<p><font size="12">Oxygen</font></p>
+<p>
+<font size="5">
+Blood oxygen level is the amount of oxygen circulating in the blood. Most of the oxygen is carried by red blood cells, which collect oxygen from the lungs and deliver it to all parts of the body.
+<br><br>
+The body closely monitors blood oxygen levels to keep them within a specific range, so that there is enough oxygen for the needs of every cell in the body.
+<br><br>
+A person’s blood oxygen level is an indicator of how well the body distributes oxygen from the lungs to the cells, and it can be important for people’s health.
+</font>
+</p>
+</div>
+<div class="side">
+<img src="Images/Oxygen Chart.png" height="435" width="590">
+</div>
+</div>
+
+<div class="row">
+<div class="main1">
+<p><font size="12">Obesity</font></p>
+<p>
+<font size="5">
+Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health. 
+<br><br>
+People are generally considered obese when their body mass index (BMI), a measurement obtained by dividing a person's weight by the square of the person's height is over 30 kg/m2; the range 25–30 kg/m2 is defined as overweight.
+</font>
+</p>
+</div>
+<div class="side1">
+<img src="Images/Obesity Chart.png" height="435" width="590">
+</div>
+</div>
+
+<div class="row">
+<div class="main">
+<p><font size="12">Cholesterol</font></p>
+<p>
+<font size="5">
+Cholesterol is a waxy substance found in your blood. Your body needs cholesterol to build healthy cells, but high levels of cholesterol can increase your risk of heart disease.
+<br><br>
+With high cholesterol, you can develop fatty deposits in your blood vessels. Eventually, these deposits grow, making it difficult for enough blood to flow through your arteries. Sometimes, those deposits can break suddenly and form a clot that causes a heart attack or stroke.
+</font>
+</p>
+</div>
+<div class="side">
+<img src="Images/Cholesterol Chart.png" height="435" width="590">
+</div>
+</div>
+
+<div class="row">
+<div class="main1">
+<p><font size="12">Diabetes/High Sugar</font></p>
+<p>
+<font size="5">
+Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.
+<br><br>
+Over time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.
+</font>
+</p>
+</div>
+<div class="side1">
+<img src="Images/Diabetes Chart.png" height="500" width="590">
+</div>
+</div>    
+
+<div class="row">
+<div class="main">
+<p><font size="12">Cholesterol</font></p>
+<p>
+<font size="5">
+Your thyroid is a butterfly-shaped gland in your neck, just above your collarbone. It is one of your endocrine glands, which make hormones. 
+<br><br>
+Thyroid hormones control the rate of many activities in your body. These include how fast you burn calories and how fast your heart beats. 
+<br><br>
+All of these activities are your body's metabolism.
+</font>
+</p>
+</div>
+<div class="side">
+<img src="Images/Thyroid Chart.png" height="470" width="590">
+</div>
+</div>
+
+<br>
+
+<div class="footer">
+  <p><font size="2">For any queries/questions, please e-mail to hrithikamehra@gmail.com</font></p>
+  <p><font size="2">Created by Hrithik Mehra</font></p>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.4.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.4.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
+
